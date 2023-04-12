@@ -1,7 +1,11 @@
-function isLess(a, b) {
+let count = 0;
+
+function cc(card) {
   // Only change code below this line
-    return a < b;
+
+
+  return "Change Me";
   // Only change code above this line
 }
 
-isLess(10, 15);
+cc(2); cc(3); cc(7); cc('K'); cc('A');
