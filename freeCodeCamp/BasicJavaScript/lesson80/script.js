@@ -1,23 +1,7 @@
-function switchOfStuff(val) {
-  let answer = "";
+function isLess(a, b) {
   // Only change code below this line
-
-switch (val) {
-  case "a":
-    answer = "apple";
-    break;
-  case "b":
-    answer = "bird";
-    break;
-  case "c":
-    answer = "cat";
-    break;
-  default:
-    answer = "stuff";
-    break;
-}
+    return a < b;
   // Only change code above this line
-  return answer;
 }
 
-switchOfStuff(1);
+isLess(10, 15);

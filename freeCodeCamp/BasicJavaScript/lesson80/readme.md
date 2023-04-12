@@ -1,26 +1,19 @@
-# 77 Adding a Default Option in Switch Statements
+# 80 Returning Boolean Values from Functions
 
+You may recall from Comparison with the Equality Operator that all comparison operators return a boolean true or false value.
 
-In a switch statement you may not be able to specify all possible values as case statements. Instead, you can add the default statement which will be executed if no matching case statements are found. Think of it like the final else statement in an if/else chain.
+Sometimes people use an if/else statement to do a comparison, like this:
 
-A default statement should be the last case.
-
-switch (num) {
-  case value1:
-    statement1;
-    break;
-  case value2:
-    statement2;
-    break;
-...
-  default:
-    defaultStatement;
-    break;
+function isEqual(a, b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
 }
-Write a switch statement to set answer for the following conditions:
-a - apple
-b - bird
-c - cat
-default - stuff
+But there's a better way to do this. Since === returns true or false, we can return the result of the comparison:
 
-code:
+function isEqual(a, b) {
+  return a === b;
+}
+Fix the function isLess to remove the if/else statements.
