@@ -1,30 +1,15 @@
-# 86 Accessing Object Properties with Variables
-Another use of bracket notation on objects is to access a property which is stored as the value of a variable. This can be very useful for iterating through an object's properties or when accessing a lookup table.
+# 91 Testing Objects for Properties
+Sometimes it is useful to check if the property of a given object exists or not. We can use the .hasOwnProperty(propname) method of objects to determine if that object has the given property name. .hasOwnProperty() returns true or false if the property is found or not.
 
-Here is an example of using a variable to access a property:
+Example
 
-const dogs = {
-  Fido: "Mutt",
-  Hunter: "Doberman",
-  Snoopie: "Beagle"
+const myObj = {
+  top: "hat",
+  bottom: "pants"
 };
 
-const myDog = "Hunter";
-const myBreed = dogs[myDog];
-console.log(myBreed);
-The string Doberman would be displayed in the console.
+myObj.hasOwnProperty("top");
+myObj.hasOwnProperty("middle");
+The first hasOwnProperty returns true, while the second returns false.
 
-Note that we do not use quotes around the variable name when using it to access the property because we are using the value of the variable, not the name.
-
-Set the playerNumber variable to 16. Then, use the variable to look up the player's name and assign it to player.
-
-// Setup
-const testObj = {
-  12: "Namath",
-  16: "Montana",
-  19: "Unitas"
-};
-
-// Only change code below this line
-const playerNumber = 42;  // Change this line
-const player = testObj;   // Change this line
+Modify the function checkObj to test if an object passed to the function (obj) contains a specific property (checkProp). If the property is found, return that property's value. If not, return "Not Found".
