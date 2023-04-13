@@ -1,7 +1,9 @@
-function isLess(a, b) {
+const myDog = {
   // Only change code below this line
-    return a < b;
-  // Only change code above this line
-}
+  "name": "Teodor",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Nastya", "Misha"]
 
-isLess(10, 15);
+  // Only change code above this line
+};
