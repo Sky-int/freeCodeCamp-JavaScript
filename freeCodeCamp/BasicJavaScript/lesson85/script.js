@@ -1,7 +1,10 @@
-function isLess(a, b) {
-  // Only change code below this line
-    return a < b;
-  // Only change code above this line
-}
+// Setup
+const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
 
-isLess(10, 15);
+// Only change code below this line
+const entreeValue = testObj["an entree"];   // Change this line
+const drinkValue = testObj["the drink"];    // Change this line
